@@ -20,7 +20,7 @@ These efforts provide a robust starting point for managing Azure resources while
 Establishing a reliable foundation ensures I can efficiently build, expand, and dismantle complex configurations as required, all while maintaining the integrity of core components such as users, groups, roles, policies, and MFA setups. This approach reduces errors, enhances flexibility, and supports the development of a secure, scalable Azure environment tailored to diverse organizational needs.
 
 
-## -Topology
+## Topology
 
 ![Diagram Export](./image/diagram-export-12-6-2024-12_12_55-PM.png)
 
