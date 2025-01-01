@@ -3,7 +3,7 @@
 
 In this Azure lab project, I am focused on building a foundational organizational hierarchy using Azure Entra (formerly Azure Active Directory). My primary goal is to create a robust, secure, and scalable starting point that serves as the backbone for more advanced and complex configurations. By leveraging Terraform, a powerful infrastructure-as-code tool, I can automate the creation of network and infrastructure resources, ensuring consistency and efficiency. Terraform’s ability to define configurations as code allows for rapid scaling, seamless replication of environments, and easy adaptation to organizational changes. This makes it a cornerstone for constructing and iterating on secure, complex setups.
 
-## <span style="color: blue;">Objectives for Stage 1</span>
+## Objectives for Stage 1
 
 
 The **main objective** of this project is to establish a foundational Identity and Access Management (IAM) system using Azure Entra. Specifically, I set up users, groups, and roles in a JSON configuration file, and then used Terraform to read this file and automate the creation and assignment of these entities in my Azure account. This project emphasizes the following key tasks:
@@ -461,7 +461,7 @@ After running `terraform apply tfplan`, I verified that the configuration was su
 
 ### Users 
 
-![[Screenshot 2024-12-10 171130 1.png| 800]]
+![Screenshot of Users](./image/Screenshot%202024-12-10%20171130%201.png)
 
 ### Groups
 
