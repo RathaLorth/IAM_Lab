@@ -465,12 +465,12 @@ After running `terraform apply tfplan`, I verified that the configuration was su
 
 ### Groups
 
-![[Screenshot 2024-12-10 171447 1.png| 900]]
+![Screenshot of Groups](./image/Screenshot%202024-12-10%20171447%201.png)
 
 
 ### Role Assign
 
-![[Screenshot 2025-01-01 142516.png]]
+![Screenshot of Role Assignment](./image/Screenshot%202025-01-01%20142516.png)
 ## End of Initial Stage
 
 This initial stage of the project establishes a strong foundation for managing users, groups, and roles within Azure. It demonstrates how Terraform can automate and streamline Identity and Access Management tasks while ensuring accuracy and scalability. By verifying the setup in the Azure platform, I confirmed that everything was implemented correctly, providing a reliable starting point for future enhancements.
