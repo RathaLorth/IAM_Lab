@@ -79,7 +79,9 @@ For example, I’ve used Terraform to set up **Azure AD users, groups, and permi
 
 
 
-![[azure_logo_794_new-570x570 1.png| 200]]                                   ![[OIP 1.jpg| 300]]
+<img src="./image/azure_logo_794_new-570x570 1.png" alt="Azure Logo" width="200">
+                                  <img src="./image/OIP 1.jpg" alt="OIP Image" width="300">
+
 
 
 ## Stage Initial Terraform Code 
