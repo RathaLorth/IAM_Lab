@@ -476,7 +476,7 @@ After running `terraform apply tfplan`, I verified that the configuration was su
 
 This initial stage of the project establishes a strong foundation for managing users, groups, and roles within Azure. It demonstrates how Terraform can automate and streamline Identity and Access Management tasks while ensuring accuracy and scalability. By verifying the setup in the Azure platform, I confirmed that everything was implemented correctly, providing a reliable starting point for future enhancements.
 
-Looking ahead, this project will evolve to include additional features, such as more advanced security configurations, role-based access controls, and integrations with other Azure services, network security, and many other. Each new phase will build on this foundation, creating a comprehensive and practical lab environment to demonstrate my skills in managing Azure and IAM effectively. This project is not just a one-off; it’s the beginning of a series of mini-labs designed to showcase my expertise in building and securing cloud environments.
+
 
 
 
