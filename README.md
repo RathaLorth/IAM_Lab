@@ -264,7 +264,8 @@ output "subscription_id" {
 
 This stage focuses on building a foundational Identity and Access Management (IAM) environment designed to replicate a real-world corporate structure, ensuring that the setup closely mirrors the access and organizational needs of a typical business. This approach highlights practical relevance, enabling seamless integration of users, groups, and roles into scalable workflows. The goal is to automate the creation of Azure Active Directory users, groups, and role assignments by leveraging Terraform scripts that read from a JSON file. This combination ensures efficiency by standardizing configurations and enables consistency across deployments, making the setup highly repeatable and adaptable to changes. This approach ensures a secure, organized, and efficient setup for managing access to Azure resources. It also streamlines processes to support scalability and adaptability, enabling seamless integration with future enhancements.
 
-![[User1.drawio.png]]
+![User Diagram](./image/User1.drawio.png)
+
 
 ---
 
