@@ -255,7 +255,7 @@ output "subscription_id" {
 ```
 
 
-![terraform_02](./image/Terraform_02.gif)
+!
 
 
 
@@ -455,6 +455,8 @@ azuread_group.groups["chief_hr"]: Creating...
 azuread_user.users["mike.silver@cyberopspace.onmicrosoft.com"]: Creating...
 ```
 
+
+[terraform_02](./image/Terraform_02.gif)
 
 ## Verify in Azure
 
