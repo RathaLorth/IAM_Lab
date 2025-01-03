@@ -456,7 +456,7 @@ azuread_user.users["mike.silver@cyberopspace.onmicrosoft.com"]: Creating...
 ```
 
 
-[terraform_02](./image/Terraform_02.gif)
+![terraform_02](./image/Terraform_02.gif)
 
 ## Verify in Azure
 
