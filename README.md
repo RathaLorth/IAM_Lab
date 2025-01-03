@@ -1,4 +1,26 @@
 
+# Table of Contents
+- [Azure Lab Project Overview](#azure-lab-project-overview)
+- [Objectives for Stage 1](#objectives-for-stage-1)
+- [Topology](#topology)
+- [Foundation Using Terraform](#foundation-using-terraform)
+- [What is Terraform?](#what-is-terraform)
+- [Stage Initial Terraform Code](#stage-initial-terraform-code)
+- [Key Features](#key-features)
+  - [Resource Group Setup](#resource-group-setup)
+  - [Dynamic User and Group Management](#dynamic-user-and-group-management)
+  - [Group Memberships](#group-memberships)
+  - [Role-Based Access Control (RBAC)](#role-based-access-control-rbac)
+  - [Secure Credentials](#secure-credentials)
+- [Users Info](#users-info)
+- [Output](#output)
+- [Verify in Azure](#verify-in-azure)
+  - [Users](#users)
+  - [Groups](#groups)
+  - [Role Assign](#role-assign)
+- [End of Initial Stage](#end-of-initial-stage)
+
+
 **Azure Lab Project Overview**
 
 In this Azure lab project, I am focused on building a foundational organizational hierarchy using Azure Entra (formerly Azure Active Directory). My primary goal is to create a robust, secure, and scalable starting point that serves as the backbone for more advanced and complex configurations. By leveraging Terraform, a powerful infrastructure-as-code tool, I can automate the creation of network and infrastructure resources, ensuring consistency and efficiency. Terraform’s ability to define configurations as code allows for rapid scaling, seamless replication of environments, and easy adaptation to organizational changes. This makes it a cornerstone for constructing and iterating on secure, complex setups.
