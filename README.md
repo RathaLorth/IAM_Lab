@@ -255,7 +255,7 @@ output "subscription_id" {
 ```
 
 
-
+![terraform_02](./image/Terraform_02.gif)
 
 
 
