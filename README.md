@@ -218,7 +218,7 @@ resource "azuread_group" "groups" {
   display_name       = each.value.displayName # Group's display name
   mail_nickname      = lower(replace(each.value.displayName, " ", "")) # Generate a mail nickname by removing spaces
   security_enabled   = lookup(each.value, "security_enabled", true) # Enable security for the group by default
-  assignable_to_role = lookup(each.value, "assignable_to_role", true) # Allow the group to be assigned roles if specified
+  assignable_to_role = each.value.assignable_to_role # Allows role assignments based on config
 }
 
 resource "azuread_group_member" "group_members" {
@@ -342,19 +342,20 @@ To further enhance the organizational structure, I created 30 groups to represen
 ```
 {
   "groups": {
-    "call_center": { "displayName": "Call Center Team" },
-    "cancellation": { "displayName": "Cancellation Team" },
-    "sales": { "displayName": "Sales Team" },
-    "manager_sales": { "displayName": "Manager - Sales" },
-    "supervisor_call_center": { "displayName": "Supervisor - Call Center" },
-    "it_support": { "displayName": "IT Support Team" },
-    "application_support": { "displayName": "Application Support Team" },
-    "networking": { "displayName": "Networking Team" },
-    "shipping": { "displayName": "Shipping Team" },
-    "inventory_management": { "displayName": "Inventory Management Team" },
-    "fleet_management": { "displayName": "Fleet Management Team" },
-    "chief_technology": { "displayName": "Chief of Technology" },
-    "chief_sales": { "displayName": "Chief of Sales" }
+    "call_center": { "displayName": "Call Center Team", "assignable_to_role": false },
+    "cancellation": { "displayName": "Cancellation Team", "assignable_to_role": false },
+    "sales": { "displayName": "Sales Team", "assignable_to_role": false },
+    "manager_sales": { "displayName": "Manager - Sales", "assignable_to_role": false },
+    "supervisor_call_center": { "displayName": "Supervisor - Call Center", "assignable_to_role": false },
+    "it_support": { "displayName": "IT Support Team", "assignable_to_role": true },
+    "application_support": { "displayName": "Application Support Team", "assignable_to_role": false },
+    "networking": { "displayName": "Networking Team", "assignable_to_role": false },
+    "shipping": { "displayName": "Shipping Team", "assignable_to_role": false },
+    "inventory_management": { "displayName": "Inventory Management Team", "assignable_to_role": false },
+    "fleet_management": { "displayName": "Fleet Management Team", "assignable_to_role": false },
+    "chief_technology": { "displayName": "Chief of Technology", "assignable_to_role": true },
+    "chief_sales": { "displayName": "Chief of Sales", "assignable_to_role": false }
+ 
   }
 }
 ```
@@ -389,12 +390,10 @@ Finally, I assigned roles to some of the groups, enabling precise access control
 ```
 {
   "role_assignments": [
-    { "role_id": "fdd7a751-b60b-444a-984c-02652fe8fa1c", "group": "chief_hr", "scope": "resource_group" },
-    { "role_id": "729827e3-9c14-49f7-bb1b-9608f156bbb8", "group": "it_support", "scope": "resource_group" },
-    { "role_id": "d37c8bed-0711-4417-ba38-b4abe66ce4c2", "group": "networking", "scope": "resource_group" },
-    { "role_id": "729827e3-9c14-49f7-bb1b-9608f156bbb8", "group": "supervisor_it_support", "scope": "resource_group" },
-    { "role_id": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3", "group": "supervisor_application_support", "scope": "resource_group" }
-  ]
+       { "role_id": "fdd7a751-b60b-444a-984c-02652fe8fa1c", "group": "chief_hr", "scope": "resource_group" },
+      { "role_id": "729827e3-9c14-49f7-bb1b-9608f156bbb8", "group": "it_support", "scope": "resource_group" },
+      { "role_id": "729827e3-9c14-49f7-bb1b-9608f156bbb8", "group": "supervisor_it_support", "scope": "resource_group" }
+    ]
 }
 ```
 
