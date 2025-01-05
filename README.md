@@ -12,7 +12,7 @@
   - [Group Memberships](#group-memberships)
   - [Role-Based Access Control (RBAC)](#role-based-access-control-rbac)
   - [Secure Credentials](#secure-credentials)
-- [Users Info](#users-info)
+- [Json Info](#Json-info)
 - [Output](#output)
 - [Verify in Azure](#verify-in-azure)
   - [Users](#users)
@@ -319,7 +319,7 @@ Generated **secure, random passwords** for all users, enforcing password resets 
 
 
 
-## Users info
+## JSON info
 I created a JSON file with 38 users, assigning each user an Azure AD email, job title, department, and team. For example:
 
 ```
