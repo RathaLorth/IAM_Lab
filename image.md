@@ -25,7 +25,7 @@ Establishing a reliable foundation ensures I can efficiently build, expand, and 
 
 ## Topology
 
-![](Lab 1/image/993bf2deae7e6c56550787f4b43f85d2.png)
+![](image/993bf2deae7e6c56550787f4b43f85d2.png)
 
 
 ---
